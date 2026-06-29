@@ -1,0 +1,15 @@
+   <!DOCTYPE html>
+   <html>
+   <head><title>My Ecommerce Site</title></head>
+   <body>
+       <h1>Welcome to My Shop</h1>
+       {% for product in products %}
+           <div>
+               <h3>{{ product.name }}</h3>
+               <p>Price: ₹{{ product.price }}</p>
+               <p>{{ product.description }}</p>
+           </div>
+           <hr>
+       {% endfor %}
+   </body>
+   </html>
